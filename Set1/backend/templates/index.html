@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timestamp Difference Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timestamp Difference Calculator</h1>
+        <form method="POST">
+            <label for="input_data">Input Data:</label>
+            <textarea id="input_data" name="input_data" rows="10" required>{{ input_data }}</textarea>
+            <button type="submit">Calculate</button>
+        </form>
+        
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+        
+        {% if results %}
+            <div class="result">
+                <p>{ "id" : {{ node_id }},
+                "result":{{results}} }</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
