@@ -1,0 +1,6 @@
+Msisdn,domain,duration_sec,fdr_count,kbps,isAudio,isVideo
+2,app2,131.0,5,17.458503816793893,True,False
+3,app3,423.0,6,73.88028368794326,True,False
+3,app4,133.0,1,426.57563909774433,False,True
+3,app4,167.0,1,441.7019401197605,False,True
+4,app3,61.0,6,140.40288524590162,True,False
